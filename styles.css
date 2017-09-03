@@ -1,0 +1,11 @@
+* {
+  font-family: Roboto, sans-serif;
+  font-size:18px
+}
+      
+input {
+  width:90%;
+  min-height:20px;
+  border:1px solid lightgray;
+  text-align:center;
+}
