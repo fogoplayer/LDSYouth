@@ -10,3 +10,26 @@
   min-height:56px;
   margin-bottom:11px;
 }
+
+nav {
+  position:fixed;
+  z-index:1;
+  overflow:hidden;
+}
+
+.section.no-pad-bot {
+  padding-top:56px;
+}
+
+.textArea.signoff {
+  display:inline-block;
+  width:150px;
+  font-size:18px;
+  height:21px;
+  min-height:21px;
+  text-align:center;
+  margin-left:10px;
+  margin-bottom:10px;
+  border:0px;
+  border-bottom: 1px solid black;
+}
