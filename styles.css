@@ -18,7 +18,7 @@ nav {
 }
 
 .section.no-pad-bot {
-  padding-top:56px;
+  padding-top:64px;
 }
 
 .textArea.signoff {
@@ -32,4 +32,26 @@ nav {
   margin-bottom:10px;
   border:0px;
   border-bottom: 1px solid black;
+  background-color:DDDDDD;
+}
+
+.collection-card {
+  padding:0 !important;
+}
+
+.tableContainer {
+  width:100%;
+  overflow-x:scroll;
+}
+
+table{
+  width:max-content !important;
+  min-width:100%;
+}
+
+.progressCell{
+  border:.5px solid black;
+  text-align:center;
+  vertical-align:middle;
+  min-width:125px;
 }
