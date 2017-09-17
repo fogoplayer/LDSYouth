@@ -12,10 +12,8 @@ var save = function(){
 var load = function (){
   var text = document.getElementsByClassName("textArea");
   for (i=0;i<text.length;i++){
-    if (storage.getItem(text[i].id) !== undefined){
+    if (storage.getItem(text[i].id) !== (undefined || null) ){
       text[i].innerHTML = storage.getItem(text[i].id);
-    }else{
-      text[i].innerHTML = "";
     }
     
     text[i].addEventListener("keyup", save);
