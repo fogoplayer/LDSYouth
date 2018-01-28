@@ -24,7 +24,7 @@ Should you find these or any other error, fill out the form in the "Contact the 
 
 ##### Suggest improvements
 
-The second way you can help is to suggest improvements. Right now, the site is a word-for-word copy of the Duty to God and Personal Progress booklets, which means that it is not fully taking advantage of the benefits of a digital format. References to page numbers should be replaced with hyperlinks, and any point where the user is told to write something down in a journal or notebook should have a space for them to write. Even if you don’t know how to add those things, submitting them through the "Contact the Developer" form will let me know that changes need to be made.
+The second way you can help is to suggest improvements. We are now transitioning the site from a word-for-word copy of the Duty to God and Personal Progress booklets to something that fully takes advantage of the benefits of a digital format. References to page numbers are being replaced with hyperlinks, and any point where the user is told to write something down in a journal or notebook now has a space for them to write. If I missed something, submitting it through the "Contact the Developer" form will let me know that changes need to be made.
 
   
 
@@ -32,13 +32,13 @@ In addition, if you have an idea for a useful feature, request it with the "Cont
 
 ##### Provide art
 
-Right now all art is Creative Commons images taken from the internet. While this solution works, custom art would be preferable. We need 256 x 256 icons to represent Duty to God and Personal Progress, and a 16x16, 32x32, and 48x48 favicon for the entire site. Concepts can be sent to [zarinloosli@gmail.com](mailto:zarinloosli@gmail.com).
+Right now all art is Creative Commons images taken from the internet. While this solution works, custom art would be preferable. We need 256 x 256 icons to represent Duty to God and Personal Progress, and a 128, 144, 152, 192 and 256 square favicon for the entire site. Concepts can be sent to [zarinloosli@gmail.com](mailto:zarinloosli@gmail.com).
 
 #### I know how to code. How can I help?
 
 ##### Fix Issues
 
-LDSYouth is currently in Beta. Any help in fixing bugs, typos, and formatting errors would be invaluable as I try to get it ready for a full release. See the “I don’t know how to code. How can I help?” section for information on the kinds of bugs I suspect exist.
+Any help in fixing bugs, typos, and formatting errors would be invaluable. See the “I don’t know how to code. How can I help?” section for information on the kinds of bugs I suspect exist.
 
   
 
@@ -76,15 +76,15 @@ Currently, any time a key is pressed on the page the full contents of every div 
 
 ##### Single Page Application (Research)
 
-Rewriting the application as a Single Page Application (SPA) will speed up future development in several ways. Currently, I am leaning towards AngularJS, but if a third-party contributor would rather use a different library, they are of course free to do so.
+Rewriting the application as a Single Page Application (SPA) will speed up future development in several ways. Currently, I am leaning towards React, but if a third-party contributor would rather use a different framework, they are of course free to do so.
 
-##### Offline Support (Research)
+##### Offline Support (Awaiting Development)
 
-Add Service Workers to make the website accessible offline.
+Add Service Workers to make the website accessible offline. A service worker file exists, but a configuration page to decide what to download, and the accompanying code, still needs to be written.
 
 ##### Improve Data Storage (Research)
 
-Currently user data is stored through the storage API. This is less than ideal for a few reasons: it is available to other sites to access, it is limited to a single computer, and the end user may accidentally delete it. An ideal solution would include redundant local storage for speed on slow connections and offline use coupled with a remote server for data syncing and backups. I have not selected technologies for this yet, though I am looking into the IndexedDB API and Node.JS.
+Currently user data is stored through the localStorage API. This is less than ideal for a few reasons: it is available to other sites to access, it is limited to a single computer, and the end user may accidentally delete it. An ideal solution would include redundant local storage for speed on slow connections and offline use coupled with a remote server for data syncing and backups. I have not selected technologies for this yet, though I am looking into the IndexedDB API and Node.JS.
 
 ##### Adding ids to Headers and URL Fragments (Awaiting Development)
 
