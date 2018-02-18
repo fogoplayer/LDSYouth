@@ -1,7 +1,16 @@
 var cacheName = 'LDSYouth';
-var dataCacheName = "LDSYouth-v1";
+var dataCacheName = "LDSYouth-v5";
 var filesToCache = [
     '/',
+    '/LDSYouth/',
+    'index.html',
+    'main.js',
+    'styles.css',
+    'manifest.json',
+    'materialize.min.css',
+    'materialize.min.js',
+    'images/dtg.jpg',
+    'images/pp.jpg'
 ];
 
 self.addEventListener('install', function(e) {
@@ -29,24 +38,10 @@ self.addEventListener('activate', function(e) {
     return self.clients.claim();
 });
 
-self.addEventListener('fetch', function(e) {
-    //console.log('[ServiceWorker] Fetch', e.request.url);
-    var dataUrl = "https://query.yahoapis.com/v1/ubic/yql";
-    if (e.request.url.indexOf(dataUrl) > -1) {
-        e.respondWith(
-            caches.open(dataCacheName).then(function(cache) {
-                return fetch(e.request).then(function(response) {
-                    cache.put(e.request.url, e.response.clone());
-                    return response;
-                });
-            })
-        );
-    }
-    else {
-        e.respondWith(
-            caches.match(e.request).then(function(response) {
-                return response || fetch(e.request);
-            })
-        );
-    }
+self.addEventListener('fetch', function(event) {
+    event.respondWith(
+        caches.match(event.request).then(function(response) {
+            return response || fetch(event.request);
+        })
+    );
 });
