@@ -74,6 +74,10 @@ A feature that I or someone else is actively working on. If you begin working on
 
 Currently, any time a key is pressed on the page the full contents of every div on the page is saved to localStorage. While no issues have been noted with lag, this is still unnecessary.
 
+##### Add previous and next buttons (Awaiting Development)
+
+Add buttons at the top and bottom of each page to move on to the next section or go on to the last. This may wait for the full React re-write, as React would make implimenting this a lot easier, but only time will tell.
+
 ##### Single Page Application (Research)
 
 Rewriting the application as a Single Page Application (SPA) will speed up future development in several ways. Currently, I am leaning towards React, but if a third-party contributor would rather use a different framework, they are of course free to do so.
