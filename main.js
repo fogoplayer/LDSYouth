@@ -1,5 +1,15 @@
 var storage = localStorage;
 
+document.addEventListener("DOMContentLoaded", function() {
+    if (document.getElementsByClassName("textArea")){
+        load();
+    }
+    
+    if (document.getElementsByName("progressCell")){
+        loadProgress();
+    }
+}
+
 /*
 Saves contents of divs on the page to local storage
 */
