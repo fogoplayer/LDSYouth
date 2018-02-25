@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (document.getElementsByName("progressCell")){
         loadProgress();
     }
-}
+});
 
 /*
 Saves contents of divs on the page to local storage
