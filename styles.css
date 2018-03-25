@@ -1,0 +1,56 @@
+* {
+  font-family: Roboto, sans-serif;
+  font-size:18px
+}
+      
+.textArea {
+  display:inline-block;
+  width:calc(100% - 2px);
+  border:1px solid black;
+  min-height:28px;
+  margin-bottom:11px;
+}
+
+nav {
+  position:fixed;
+  z-index:1;
+  overflow:hidden;
+}
+
+.section.no-pad-bot {
+  padding-top:64px;
+}
+
+.textArea.signoff {
+  display:inline-block;
+  width:150px;
+  font-size:18px;
+  height:21px;
+  min-height:21px;
+  text-align:center;
+  margin-bottom:10px;
+  border:0px;
+  border-bottom: 1px solid black;
+  background-color:DDDDDD;
+}
+
+.collection-card {
+  padding:0 !important;
+}
+
+.tableContainer {
+  width:100%;
+  overflow-x:scroll;
+}
+
+table{
+  width:max-content !important;
+  min-width:100%;
+}
+
+.progressCell{
+  border:.5px solid black;
+  text-align:center;
+  vertical-align:middle;
+  min-width:125px;
+}
